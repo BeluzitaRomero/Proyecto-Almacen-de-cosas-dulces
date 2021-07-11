@@ -1,0 +1,107 @@
+@media only screen and (max-width: 768px) {
+  /*-----------------------------------------PRODUCTO------------*/
+  .productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cajaRow {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .cajaRow__producto {
+        width: fit-content;
+      }
+    }
+    .cajaRow--reverse {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .cajaRow__producto {
+        width: fit-content;
+
+        .cajaRow__producto__texto {
+          width: fit-content;
+        }
+      }
+    }
+  }
+  /*-------------------------------------------GALERIA-----------*/
+  .galeria .galeria__fotos img {
+    opacity: 1;
+  }
+  /*-------------------------------------------CONTACTO---------*/
+  .contacto__principal {
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 2%;
+      max-width: 100%;
+
+      .datosPersonales {
+        display: flex;
+        flex-direction: column;
+
+        .nombreApellido {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .telefono {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+    }
+    .logoRectangular {
+      max-width: 80%;
+      height: max-content;
+    }
+  }
+  .textArea {
+    max-width: 100%;
+  }
+  #boton {
+    display: flex;
+    justify-content: space-evenly;
+
+    .boton {
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .footer__derechos {
+      h4 {
+        text-align: center;
+      }
+    }
+
+    #footer__links {
+      .linksFooter {
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+
+        li {
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+}
