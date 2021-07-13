@@ -13,40 +13,57 @@ body {
   background-color: #f7e4e4;
 }
 /*-------------------HOME---------------------------------*/
-.home {
-  padding: 2%;
-  display: flex;
+#home {
+  section {
+    margin-bottom: 2rem;
+    .home {
+      padding: 2%;
+      display: flex;
+      margin-bottom: 2rem;
 
-  align-items: center;
-  flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../img/uni_original.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh;
+      align-items: center;
+      flex-direction: column;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../img/uni_original.jpg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 100vh;
 
-  .home__titulo1 {
-    color: rgb(255, 255, 255);
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 9rem;
-    padding-bottom: 5%;
-  }
+      .home__titulo1 {
+        color: rgb(255, 255, 255);
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 9rem;
+        padding-bottom: 5%;
+      }
 
-  .home__principal__texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .p1 {
-      color: white;
-      line-height: 1.6;
-      text-align: center;
-      font-size: 1.5rem;
-      width: 70%;
+      .home__principal__texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .p1 {
+          color: white;
+          line-height: 1.6;
+          text-align: center;
+          font-size: 1.5rem;
+          width: 70%;
+          margin: auto;
+          padding-top: 5rem;
+        }
+      }
+    }
+    .homeIntro {
+      padding: 2%;
       margin: auto;
-      padding-top: 5rem;
+      background: linear-gradient(
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+      );
+      font-size: 1.3rem;
+      width: 80%;
+      border-radius: 1rem;
     }
   }
 }
@@ -61,8 +78,9 @@ body {
     color: $color-titulos;
     font-weight: bold;
     text-align: center;
-    padding-top: 9rem;
-    padding-bottom: 1%;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   div {
@@ -71,31 +89,39 @@ body {
     flex-wrap: wrap;
 
     .desayunos {
-      width: $ancho;
-      height: $alto;
-      padding: 2%;
+      width: 15rem;
+      height: 15rem;
+      margin: 2rem;
       border-radius: 2rem;
     }
   }
+
   .divText2 {
     margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .text2 {
       padding: 2%;
-      width: 40rem;
       background: linear-gradient(
         rgba(255, 255, 255, 0.3),
         rgba(255, 255, 255, 0.3)
       );
       font-size: 1.3rem;
-      width: 70%;
+      width: 80%;
       margin: auto;
       border-radius: 1rem;
     }
   }
 
-  .imgLogo {
-    padding-top: 6%;
+  .botonIndex {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(247, 168, 190);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: fit-content;
   }
 }
 /*----------------------PRODUCTOS--------------------------*/
@@ -160,24 +186,98 @@ body {
   border-radius: 2rem;
 }
 
-.carousel-item {
-  background-image: url(../img/desayuno/desayuno1.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 60vh;
-}
-.carousel2 {
-  background-image: url(../img/desayuno/desayuno4.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 60vh;
-}
+#desayunos {
+  .divisor {
+    width: fit-content;
+    padding: 0 2rem;
+    margin: auto;
+    img {
+      width: 40rem;
+    }
+  }
+  .desayunos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.carousel3 {
-  background-image: url(../img/Almacen002.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 60vh;
+    h2 {
+      margin-top: 6rem;
+      padding: 0 2rem;
+      color: $color-titulos;
+      text-align: center;
+      font-weight: bold;
+      width: 100%;
+    }
+
+    p {
+      background: linear-gradient(
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+      );
+      line-height: 1.6;
+      text-align: left;
+      font-size: 1.3rem;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 1rem;
+      margin: 2rem;
+      width: 70%;
+    }
+    .contenedorImgDesayuno {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .imgDesayuno {
+        width: 15rem;
+        height: 15rem;
+        margin: 2rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  #carouselExampleCaptions {
+    .carousel-inner {
+      .carousel1 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(../img/nuevas/merengues.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 70vh;
+      }
+      .carousel2 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+          ),
+          url(../img/nuevas/A.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 70vh;
+      }
+
+      .carousel3 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(../img/nuevas/cajas1.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 70vh;
+      }
+    }
+  }
 }
 
 /*---------------------GALERIA----------------------------*/

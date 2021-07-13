@@ -123,6 +123,7 @@
 }
 
 @media only screen and (max-width: 480px) {
+  /*---------------------GENERALES--------------------*/
   html {
     font-size: 62.5%;
   }
@@ -156,6 +157,15 @@
   footer #footer__links .linksFooter li {
     padding-right: 1rem;
   }
+}
+
+/*----------------------HOME--------------------*/
+.home__principal .home__titulo1 {
+  margin-top: 6rem;
+}
+
+.home__principal .home__principal__texto {
+  margin: 4rem;
 }
 
 * {
@@ -281,11 +291,16 @@ body {
 }
 
 /*-------------------HOME---------------------------------*/
-.home {
+#home section {
+  margin-bottom: 2rem;
+}
+
+#home section .home {
   padding: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -301,7 +316,7 @@ body {
   height: 100vh;
 }
 
-.home .home__titulo1 {
+#home section .home .home__titulo1 {
   color: white;
   font-size: 3rem;
   font-weight: bold;
@@ -310,7 +325,7 @@ body {
   padding-bottom: 5%;
 }
 
-.home .home__principal__texto {
+#home section .home .home__principal__texto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,7 +338,7 @@ body {
           align-items: center;
 }
 
-.home .home__principal__texto .p1 {
+#home section .home .home__principal__texto .p1 {
   color: white;
   line-height: 1.6;
   text-align: center;
@@ -331,6 +346,16 @@ body {
   width: 70%;
   margin: auto;
   padding-top: 5rem;
+}
+
+#home section .homeIntro {
+  padding: 2%;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  font-size: 1.3rem;
+  width: 80%;
+  border-radius: 1rem;
 }
 
 .home2 {
@@ -352,8 +377,9 @@ body {
   color: #5db7c5;
   font-weight: bold;
   text-align: center;
-  padding-top: 9rem;
-  padding-bottom: 1%;
+  margin: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .home2 div {
@@ -368,29 +394,45 @@ body {
 }
 
 .home2 div .desayunos {
-  width: 280px;
-  height: 300px;
-  padding: 2%;
+  width: 15rem;
+  height: 15rem;
+  margin: 2rem;
   border-radius: 2rem;
 }
 
 .home2 .divText2 {
   margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home2 .divText2 .text2 {
   padding: 2%;
-  width: 40rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
   background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
   font-size: 1.3rem;
-  width: 70%;
+  width: 80%;
   margin: auto;
   border-radius: 1rem;
 }
 
-.home2 .imgLogo {
-  padding-top: 6%;
+.home2 .botonIndex {
+  text-decoration: none;
+  color: black;
+  background-color: #f7a8be;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 /*----------------------PRODUCTOS--------------------------*/
@@ -468,25 +510,104 @@ body {
   border-radius: 2rem;
 }
 
-.carousel-item {
-  background-image: url(../img/desayuno/desayuno1.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 60vh;
+#desayunos .divisor {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 2rem;
+  margin: auto;
 }
 
-.carousel2 {
-  background-image: url(../img/desayuno/desayuno4.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 60vh;
+#desayunos .divisor img {
+  width: 40rem;
 }
 
-.carousel3 {
-  background-image: url(../img/Almacen002.jpg);
+#desayunos .desayunos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#desayunos .desayunos h2 {
+  margin-top: 6rem;
+  padding: 0 2rem;
+  color: #5db7c5;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+#desayunos .desayunos p {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  line-height: 1.6;
+  text-align: left;
+  font-size: 1.3rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  width: 70%;
+}
+
+#desayunos .desayunos .contenedorImgDesayuno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#desayunos .desayunos .contenedorImgDesayuno div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#desayunos .desayunos .contenedorImgDesayuno .imgDesayuno {
+  width: 15rem;
+  height: 15rem;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
+#desayunos #carouselExampleCaptions .carousel-inner .carousel1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/nuevas/merengues.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/nuevas/merengues.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 60vh;
+  min-height: 70vh;
+}
+
+#desayunos #carouselExampleCaptions .carousel-inner .carousel2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/nuevas/A.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/nuevas/A.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 70vh;
+}
+
+#desayunos #carouselExampleCaptions .carousel-inner .carousel3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/nuevas/cajas1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/nuevas/cajas1.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 70vh;
 }
 
 /*---------------------GALERIA----------------------------*/
