@@ -866,4 +866,13 @@ body {
   border-radius: 0.5rem;
   margin-left: 1rem;
 }
+
+/*--------------------------------ERROR 404-------------------------*/
+.error404 {
+  margin-top: 9rem;
+}
+
+.error404 .link404 {
+  margin: 4rem;
+}
 /*# sourceMappingURL=style.css.map */
