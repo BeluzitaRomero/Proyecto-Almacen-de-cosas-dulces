@@ -519,6 +519,7 @@ body {
   width: fit-content;
   padding: 0 2rem;
   margin: auto;
+  margin-bottom: 2rem;
 }
 
 #desayunos .divisor img {
