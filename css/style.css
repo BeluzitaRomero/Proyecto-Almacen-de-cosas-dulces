@@ -125,7 +125,10 @@
 @media only screen and (max-width: 480px) {
   /*---------------------GENERALES--------------------*/
   html {
-    font-size: 62.5%;
+    font-size: 67%;
+  }
+  .nav-link {
+    font-size: 1.4rem;
   }
   footer {
     display: -webkit-box;
@@ -536,7 +539,7 @@ body {
 }
 
 #desayunos .desayunos h2 {
-  margin-top: 6rem;
+  margin-top: 2rem;
   padding: 0 2rem;
   color: #5db7c5;
   text-align: center;
