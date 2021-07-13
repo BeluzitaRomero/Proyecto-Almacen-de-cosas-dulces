@@ -349,7 +349,8 @@ body {
 }
 
 .home2 h2 {
-  color: #85c2cb;
+  color: #5db7c5;
+  font-weight: bold;
   text-align: center;
   padding-top: 9rem;
   padding-bottom: 1%;
@@ -399,7 +400,7 @@ body {
 }
 
 .productos .productos__titulo2 {
-  color: #85c2cb;
+  color: #5db7c5;
   font-weight: 800;
   font-size: 2rem;
   text-align: center;
@@ -502,7 +503,7 @@ body {
 }
 
 .galeria .galeria__titulo {
-  color: #85c2cb;
+  color: #5db7c5;
   font-size: 2rem;
   font-weight: 800;
   text-align: center;
@@ -554,7 +555,7 @@ body {
 }
 
 .conocenos .conocenos__titulo {
-  color: #85c2cb;
+  color: #5db7c5;
   font-size: 2rem;
   font-weight: 800;
   text-align: center;
@@ -613,7 +614,7 @@ body {
 }
 
 .contacto .contacto__titulo {
-  color: #85c2cb;
+  color: #5db7c5;
   font-size: 2rem;
   font-weight: 800;
   text-align: center;
@@ -714,7 +715,8 @@ body {
 }
 
 .contacto2 .aviso {
-  color: #85c2cb;
+  color: #5db7c5;
+  font-weight: bold;
   margin-bottom: 1%;
 }
 
