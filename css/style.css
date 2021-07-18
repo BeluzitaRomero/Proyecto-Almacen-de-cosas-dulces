@@ -389,19 +389,19 @@ body {
   border-radius: 1rem;
 }
 #desayunos #carouselExampleCaptions .carousel-inner .carousel1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/nuevas/merengues.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/desayuno/carousel1.jpg);
   background-position: center;
   background-size: cover;
   min-height: 70vh;
 }
 #desayunos #carouselExampleCaptions .carousel-inner .carousel2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/nuevas/A.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/desayuno/carousel2.jpg);
   background-position: center;
   background-size: cover;
   min-height: 70vh;
 }
 #desayunos #carouselExampleCaptions .carousel-inner .carousel3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/nuevas/cajas1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/desayuno/carousel3.jpg);
   background-position: center;
   background-size: cover;
   min-height: 70vh;

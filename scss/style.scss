@@ -246,36 +246,18 @@ body {
 
   #carouselExampleCaptions {
     .carousel-inner {
-      .carousel1 {
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)
-          ),
-          url(../img/nuevas/merengues.jpg);
-        background-position: center;
-        background-size: cover;
-        min-height: 70vh;
-      }
-      .carousel2 {
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2)
-          ),
-          url(../img/nuevas/A.jpg);
-        background-position: center;
-        background-size: cover;
-        min-height: 70vh;
-      }
 
-      .carousel3 {
-        background-image: linear-gradient(
+      @each $carousel in carousel1, carousel2, carousel3 {
+        .#{$carousel}{
+          background-image: linear-gradient(
             rgba(0, 0, 0, 0.3),
             rgba(0, 0, 0, 0.3)
           ),
-          url(../img/nuevas/cajas1.jpg);
-        background-position: center;
-        background-size: cover;
-        min-height: 70vh;
+          url(../img/desayuno/#{$carousel}.jpg);
+          background-position: center;
+          background-size: cover;
+          min-height: 70vh;
+        }
       }
     }
   }
