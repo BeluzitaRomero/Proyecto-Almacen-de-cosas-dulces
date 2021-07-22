@@ -167,6 +167,10 @@
   .home__principal .home__principal__texto {
     margin: 4rem;
   }
+  /*----------------------ERROR--------------------*/
+  .error {
+    margin-bottom: 5rem;
+  }
 }
 
 * {
