@@ -879,7 +879,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 12rem;
-  height: 90vh;
 }
 
 .error h1 {
