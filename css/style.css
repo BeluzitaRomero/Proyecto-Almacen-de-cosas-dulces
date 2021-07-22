@@ -160,15 +160,13 @@
   footer #footer__links .linksFooter li {
     padding-right: 1rem;
   }
-}
-
-/*----------------------HOME--------------------*/
-.home__principal .home__titulo1 {
-  margin-top: 6rem;
-}
-
-.home__principal .home__principal__texto {
-  margin: 4rem;
+  /*----------------------HOME--------------------*/
+  .home__principal .home__titulo1 {
+    margin-top: 6rem;
+  }
+  .home__principal .home__principal__texto {
+    margin: 4rem;
+  }
 }
 
 * {
@@ -880,27 +878,29 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 9rem;
-  height: 80%;
+  margin-top: 12rem;
+  height: 90vh;
 }
 
 .error h1 {
   color: #3b150a;
   font-weight: bold;
   text-align: center;
+  margin: 2rem 0;
 }
 
 .error img {
   width: 40rem;
   margin-bottom: 3rem;
+  margin: 2rem 0;
 }
 
 .error a {
   background-color: #f7a8be;
   color: #3b150a;
   padding: 1rem;
-  border-radius: 1rem;
   margin: 2rem;
+  border-radius: 1rem;
   text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
