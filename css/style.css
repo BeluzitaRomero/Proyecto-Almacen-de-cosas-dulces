@@ -102,9 +102,6 @@
   }
   .contacto__principal .logoRectangular {
     max-width: 80%;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
   }
   .textArea {
     max-width: 100%;
@@ -560,7 +557,7 @@ body {
   margin: 1rem;
   border-radius: 1rem;
   margin: 2rem;
-  width: 70%;
+  width: auto;
 }
 
 #desayunos .desayunos .contenedorImgDesayuno {
