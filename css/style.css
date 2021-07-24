@@ -101,7 +101,7 @@
             justify-content: center;
   }
   .contacto__principal .logoRectangular {
-    max-width: 80%;
+    max-width: 90%;
   }
   .textArea {
     max-width: 100%;
@@ -756,9 +756,12 @@ body {
           flex-direction: row-reverse;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -771,7 +774,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2% 2% 2% 2%;
+  margin: 1.3rem 2rem 2rem 2rem;
 }
 
 .contacto__principal form .datosPersonales {
@@ -803,11 +806,8 @@ body {
 }
 
 .contacto__principal .logoRectangular {
-  margin-top: 1%;
+  margin: 1.3rem;
   width: 35.4rem;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   border-radius: 1rem;
 }
 
@@ -841,7 +841,7 @@ body {
 .contacto2 .aviso {
   color: #5db7c5;
   font-weight: bold;
-  margin-bottom: 1%;
+  margin: 2rem 0;
 }
 
 .contacto2 p {

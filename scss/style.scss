@@ -368,13 +368,14 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 
   form {
     display: flex;
     flex-direction: column;
-    padding: 2% 2% 2% 2%;
+    margin: 1.3rem 2rem 2rem 2rem;
 
     .datosPersonales {
       display: flex;
@@ -393,9 +394,8 @@ body {
   }
 
   .logoRectangular {
-    margin-top: 1%;
+    margin: 1.3rem;
     width: 35.4rem;
-    height: max-content;
     border-radius: 1rem;
   }
 }
@@ -422,7 +422,7 @@ body {
   .aviso {
     color: $color-titulos;
     font-weight: bold;
-    margin-bottom: 1%;
+    margin: 2rem 0;
   }
   p {
     line-height: 1.6;
