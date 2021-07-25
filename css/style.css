@@ -277,12 +277,9 @@ footer #footer__links .linksFooter li {
 
 /*-------------LOGO-CENTRAL-PIE-DE-PAGINA----*/
 .imgLogo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 8rem;
+  height: auto;
+  margin: auto;
   margin-top: 6%;
 }
 
