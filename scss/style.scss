@@ -6,6 +6,7 @@
 $color-titulos: rgb(93, 183, 197);
 $ancho: 280px;
 $alto: 300px;
+$fuenteTexto: 1.3rem;
 
 /*---------GENERAL-----------*/
 body {
@@ -61,7 +62,7 @@ body {
         rgba(255, 255, 255, 0.3),
         rgba(255, 255, 255, 0.3)
       );
-      font-size: 1.3rem;
+      font-size: $fuenteTexto;
       width: 80%;
       border-radius: 1rem;
     }
@@ -108,7 +109,7 @@ body {
         rgba(255, 255, 255, 0.3),
         rgba(255, 255, 255, 0.3)
       );
-      font-size: 1.3rem;
+      font-size: $fuenteTexto;
       width: 80%;
       margin: auto;
       border-radius: 1rem;
@@ -156,7 +157,7 @@ body {
   align-items: center;
   line-height: 1.6;
   text-align: left;
-  font-size: 1.3rem;
+  font-size: $fuenteTexto;
   padding: 1rem;
   margin: 1rem;
   border-radius: 1rem;
@@ -217,7 +218,7 @@ body {
       );
       line-height: 1.6;
       text-align: left;
-      font-size: 1.3rem;
+      font-size: $fuenteTexto;
       padding: 1rem;
       margin: 1rem;
       border-radius: 1rem;
@@ -332,7 +333,7 @@ body {
       padding: 2rem;
       line-height: 1.6;
       text-align: left;
-      font-size: 1.3rem;
+      font-size: $fuenteTexto;
       width: 40rem;
     }
 
@@ -427,7 +428,7 @@ body {
   p {
     line-height: 1.6;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: $fuenteTexto;
   }
 }
 
