@@ -117,16 +117,7 @@
   #boton .boton {
     margin: 0;
   }
-}
-
-@media only screen and (max-width: 480px) {
-  /*---------------------GENERALES--------------------*/
-  html {
-    font-size: 67%;
-  }
-  .nav-link {
-    font-size: 1.4rem;
-  }
+  /*----------------------- FOOTER-----------------------*/
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -142,7 +133,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer .footer__derechos h4 {
+  footer .footer__derechos p {
     text-align: center;
   }
   footer #footer__links .linksFooter {
@@ -156,6 +147,16 @@
   }
   footer #footer__links .linksFooter li {
     padding-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /*---------------------GENERALES--------------------*/
+  html {
+    font-size: 67%;
+  }
+  .nav-link {
+    font-size: 1.4rem;
   }
   /*----------------------HOME--------------------*/
   .home__principal .home__titulo1 {
@@ -252,7 +253,6 @@ footer .footer__derechos {
 
 footer .footer__derechos p {
   font-size: 1.2rem;
-  text-align: center;
 }
 
 footer #footer__links {

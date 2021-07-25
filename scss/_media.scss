@@ -72,17 +72,7 @@
       margin: 0;
     }
   }
-}
-
-@media only screen and (max-width: 480px) {
-  /*---------------------GENERALES--------------------*/
-  html {
-    font-size: 67%;
-  }
-  .nav-link {
-    font-size: 1.4rem;
-  }
-
+  /*----------------------- FOOTER-----------------------*/
   footer {
     display: flex;
     flex-direction: column;
@@ -90,7 +80,7 @@
     justify-content: center;
 
     .footer__derechos {
-      h4 {
+      p {
         text-align: center;
       }
     }
@@ -107,6 +97,16 @@
       }
     }
   }
+}
+@media only screen and (max-width: 480px) {
+  /*---------------------GENERALES--------------------*/
+  html {
+    font-size: 67%;
+  }
+  .nav-link {
+    font-size: 1.4rem;
+  }
+
   /*----------------------HOME--------------------*/
   .home__principal {
     .home__titulo1 {
