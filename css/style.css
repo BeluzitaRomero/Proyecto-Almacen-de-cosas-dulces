@@ -250,8 +250,9 @@ footer .footer__derechos {
           flex: 1;
 }
 
-footer .footer__derechos h4 {
-  font-size: 1rem;
+footer .footer__derechos p {
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 footer #footer__links {
