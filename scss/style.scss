@@ -8,6 +8,17 @@ $ancho: 280px;
 $alto: 300px;
 $fuenteTexto: 1.3rem;
 $bgTexto: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+$paddingTexto: 1rem;
+$borderTexto: 1rem;
+
+@mixin bgTextos {
+  background: $bgTexto;
+  padding: $paddingTexto;
+  border-radius: $borderTexto;
+  font-size: $fuenteTexto;
+  width: 80%;
+  margin: auto;
+}
 
 /*---------GENERAL-----------*/
 body {
@@ -57,15 +68,12 @@ body {
       }
     }
     .homeIntro {
-      padding: 2%;
       margin: auto;
-      background: linear-gradient(
-        rgba(255, 255, 255, 0.3),
-        rgba(255, 255, 255, 0.3)
-      );
+      background: $bgTexto;
+      border-radius: $borderTexto;
+      padding: $paddingTexto;
       font-size: $fuenteTexto;
       width: 80%;
-      border-radius: 1rem;
     }
   }
 }
@@ -74,7 +82,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*flex-wrap: wrap;*/
 
   h2 {
     color: $color-titulos;
@@ -104,17 +111,12 @@ body {
     flex-direction: column;
     align-items: center;
 
-    .text2 {
-      padding: 2%;
-      background: linear-gradient(
-        rgba(255, 255, 255, 0.3),
-        rgba(255, 255, 255, 0.3)
-      );
-      font-size: $fuenteTexto;
-      width: 80%;
-      margin: auto;
-      border-radius: 1rem;
-    }
+    background: $bgTexto;
+    padding: $paddingTexto;
+    border-radius: $borderTexto;
+    font-size: $fuenteTexto;
+    width: 80%;
+    margin: auto;
   }
 
   .botonIndex {
@@ -148,20 +150,17 @@ body {
 }
 
 .cajaRow__producto {
-  width: 40rem;
-  height: 20rem;
-  background: linear-gradient(
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.3)
-  );
   display: flex;
   align-items: center;
   line-height: 1.6;
   text-align: left;
+
+  width: 40rem;
+  height: 20rem;
+  background: $bgTexto;
   font-size: $fuenteTexto;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 1rem;
+  padding: $paddingTexto;
+  border-radius: $borderTexto;
   margin: 2rem;
 
   .cajaRow__producto__texto {
@@ -213,16 +212,12 @@ body {
     }
 
     p {
-      background: linear-gradient(
-        rgba(255, 255, 255, 0.3),
-        rgba(255, 255, 255, 0.3)
-      );
+      background: $bgTexto;
+      border-radius: $borderTexto;
+      padding: $paddingTexto;
+      font-size: $fuenteTexto;
       line-height: 1.6;
       text-align: left;
-      font-size: $fuenteTexto;
-      padding: 1rem;
-      margin: 1rem;
-      border-radius: 1rem;
       margin: 2rem;
       width: auto;
     }
@@ -331,18 +326,15 @@ body {
     flex-wrap: wrap;
 
     .textConocenos {
+      background: $bgTexto;
+      border-radius: $borderTexto;
+      padding: $paddingTexto;
       margin: 1rem;
-      padding: 2rem;
+      width: 40rem;
+
       line-height: 1.6;
       text-align: left;
       font-size: $fuenteTexto;
-      width: 40rem;
-
-      p {
-        background: $bgTexto;
-        border-radius: 1rem;
-        padding: 1rem;
-      }
     }
 
     .imgConocenos img {

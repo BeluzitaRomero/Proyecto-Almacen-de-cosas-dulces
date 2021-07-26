@@ -349,13 +349,13 @@ body {
 }
 
 #home section .homeIntro {
-  padding: 2%;
   margin: auto;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
   background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  border-radius: 1rem;
+  padding: 1rem;
   font-size: 1.3rem;
   width: 80%;
-  border-radius: 1rem;
 }
 
 .home2 {
@@ -370,7 +370,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*flex-wrap: wrap;*/
 }
 
 .home2 h2 {
@@ -412,16 +411,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.home2 .divText2 .text2 {
-  padding: 2%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
   background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  padding: 1rem;
+  border-radius: 1rem;
   font-size: 1.3rem;
   width: 80%;
   margin: auto;
-  border-radius: 1rem;
 }
 
 .home2 .botonIndex {
@@ -457,10 +453,6 @@ body {
 }
 
 .cajaRow__producto {
-  width: 40rem;
-  height: 20rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,9 +461,12 @@ body {
           align-items: center;
   line-height: 1.6;
   text-align: left;
+  width: 40rem;
+  height: 20rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
   font-size: 1.3rem;
   padding: 1rem;
-  margin: 1rem;
   border-radius: 1rem;
   margin: 2rem;
 }
@@ -548,12 +543,11 @@ body {
 #desayunos .desayunos p {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
   background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.3rem;
   line-height: 1.6;
   text-align: left;
-  font-size: 1.3rem;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 1rem;
   margin: 2rem;
   width: auto;
 }
@@ -703,19 +697,15 @@ body {
 }
 
 .conocenos .conocenos__contenido .textConocenos {
-  margin: 1rem;
-  padding: 2rem;
-  line-height: 1.6;
-  text-align: left;
-  font-size: 1.3rem;
-  width: 40rem;
-}
-
-.conocenos .conocenos__contenido .textConocenos p {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
   background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
   border-radius: 1rem;
   padding: 1rem;
+  margin: 1rem;
+  width: 40rem;
+  line-height: 1.6;
+  text-align: left;
+  font-size: 1.3rem;
 }
 
 .conocenos .conocenos__contenido .imgConocenos img {
