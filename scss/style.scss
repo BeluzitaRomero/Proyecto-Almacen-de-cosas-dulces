@@ -442,6 +442,9 @@ body {
     line-height: 1.6;
     text-align: center;
     font-size: $fuenteTexto;
+    background: $bgTexto;
+    border-radius: $borderTexto;
+    padding: $paddingTexto;
   }
 }
 
