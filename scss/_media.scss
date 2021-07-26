@@ -29,8 +29,12 @@
     }
   }
   /*-------------------------------------------GALERIA-----------*/
-  .galeria .galeria__fotos img {
-    opacity: 1;
+  .galeria {
+    .galeria__fotos {
+      img {
+        opacity: 1 !important;
+      }
+    }
   }
   /*-------------------------------------------CONTACTO---------*/
   .contacto__principal {
