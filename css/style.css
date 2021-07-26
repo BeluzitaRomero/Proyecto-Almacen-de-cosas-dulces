@@ -800,7 +800,29 @@ body {
           justify-content: space-between;
 }
 
-.contacto__principal .logoRectangular {
+.contacto__principal form div .textArea {
+  border-radius: 0.5rem;
+  border-color: rgba(114, 113, 113, 0.699);
+}
+
+.contacto__principal form #boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacto__principal form #boton .boton {
+  border-style: double;
+  border-color: #85c2cb;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+}
+
+.contacto__principal .fotoContacto {
   margin: 1.3rem;
   width: 35.4rem;
   border-radius: 1rem;
@@ -810,11 +832,6 @@ body {
   padding: 0.2rem;
   border-radius: 0.5rem;
   margin-bottom: 0.5rem;
-  border-color: rgba(114, 113, 113, 0.699);
-}
-
-.textArea {
-  border-radius: 0.5rem;
   border-color: rgba(114, 113, 113, 0.699);
 }
 
@@ -843,23 +860,6 @@ body {
   line-height: 1.6;
   text-align: center;
   font-size: 1.3rem;
-}
-
-#boton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-#boton .boton {
-  border-style: double;
-  border-color: #85c2cb;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  margin-left: 1rem;
 }
 
 /*--------------------------------ERROR 404-------------------------*/
