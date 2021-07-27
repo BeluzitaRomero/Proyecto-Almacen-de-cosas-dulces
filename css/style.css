@@ -284,6 +284,7 @@ footer #footer__links .linksFooter li {
 }
 
 /*-----VARIABLES--------------*/
+/*----------MIXIN--------------*/
 /*---------GENERAL-----------*/
 body {
   font-family: "Montserrat", sans-serif;
@@ -373,7 +374,7 @@ body {
 }
 
 .home2 h2 {
-  color: #5db7c5;
+  color: #389199;
   font-weight: bold;
   text-align: center;
   margin: auto;
@@ -438,7 +439,7 @@ body {
 }
 
 .productos .productos__titulo2 {
-  color: #5db7c5;
+  color: #389199;
   font-weight: 800;
   font-size: 2rem;
   text-align: center;
@@ -534,7 +535,7 @@ body {
 #desayunos .desayunos h2 {
   margin-top: 2rem;
   padding: 0 2rem;
-  color: #5db7c5;
+  color: #389199;
   text-align: center;
   font-weight: bold;
   width: 100%;
@@ -619,7 +620,7 @@ body {
 }
 
 .galeria .galeria__titulo {
-  color: #5db7c5;
+  color: #389199;
   font-size: 2rem;
   font-weight: 800;
   text-align: center;
@@ -671,7 +672,7 @@ body {
 }
 
 .conocenos .conocenos__titulo {
-  color: #5db7c5;
+  color: #389199;
   font-size: 2rem;
   font-weight: 800;
   text-align: center;
@@ -733,7 +734,7 @@ body {
 }
 
 .contacto .contacto__titulo {
-  color: #5db7c5;
+  color: #389199;
   font-size: 2rem;
   font-weight: 800;
   text-align: center;
@@ -851,7 +852,7 @@ body {
 }
 
 .contacto2 .aviso {
-  color: #5db7c5;
+  color: #389199;
   font-weight: bold;
   margin: 2rem 0;
 }
