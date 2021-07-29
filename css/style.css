@@ -285,6 +285,16 @@ footer #footer__links .linksFooter li {
 
 /*-----VARIABLES--------------*/
 /*----------MIXIN--------------*/
+.bgTextos, #home section .homeIntro, .home2 .divText2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  width: 80%;
+  margin: auto;
+}
+
 /*---------GENERAL-----------*/
 body {
   font-family: "Montserrat", sans-serif;
@@ -349,16 +359,6 @@ body {
   padding-top: 5rem;
 }
 
-#home section .homeIntro {
-  margin: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-  border-radius: 1rem;
-  padding: 1rem;
-  font-size: 1.3rem;
-  width: 80%;
-}
-
 .home2 {
   width: 100%;
   display: -webkit-box;
@@ -412,13 +412,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-  padding: 1rem;
-  border-radius: 1rem;
-  font-size: 1.3rem;
-  width: 80%;
-  margin: auto;
 }
 
 .home2 .botonIndex {

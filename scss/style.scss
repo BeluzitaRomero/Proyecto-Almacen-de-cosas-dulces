@@ -1,5 +1,4 @@
 @import "media";
-
 @import "global";
 
 /*-----VARIABLES--------------*/
@@ -12,7 +11,7 @@ $paddingTexto: 1rem;
 $borderTexto: 1rem;
 
 /*----------MIXIN--------------*/
-@mixin bgTextos {
+.bgTextos {
   background: $bgTexto;
   padding: $paddingTexto;
   border-radius: $borderTexto;
@@ -69,12 +68,7 @@ body {
       }
     }
     .homeIntro {
-      margin: auto;
-      background: $bgTexto;
-      border-radius: $borderTexto;
-      padding: $paddingTexto;
-      font-size: $fuenteTexto;
-      width: 80%;
+      @extend .bgTextos;
     }
   }
 }
@@ -112,12 +106,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    background: $bgTexto;
-    padding: $paddingTexto;
-    border-radius: $borderTexto;
-    font-size: $fuenteTexto;
-    width: 80%;
-    margin: auto;
+    @extend .bgTextos;
   }
 
   .botonIndex {
