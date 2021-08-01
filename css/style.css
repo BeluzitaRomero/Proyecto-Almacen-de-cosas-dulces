@@ -11500,6 +11500,20 @@ fieldset:disabled .btn {
   }
 }
 
+/*----------EXTEND--------------*/
+.bgTextos, #home section .homeIntro, .home2 .divText2, .cajaRow__producto, #desayunos .desayunos p, .conocenos .conocenos__contenido .textConocenos, .contacto2 p {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-align: left;
+  width: 80%;
+  margin: auto;
+}
+
+/*------------MIXIN----------------*/
 @media only screen and (max-width: 768px) {
   /*---------------------------------------PRODUCTO------------*/
   .productos {
@@ -11789,7 +11803,6 @@ footer #footer__links .linksFooter li {
   margin-top: 6%;
 }
 
-/*----------MIXIN--------------*/
 /*---------GENERAL-----------*/
 body {
   font-family: "Montserrat", sans-serif;
@@ -11806,14 +11819,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+  margin-bottom: 2rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/uni_original.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/uni_original.jpg);
   background-size: cover;
@@ -11839,9 +11857,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 #home section .home .home__principal__texto .p1 {
@@ -11854,16 +11877,6 @@ body {
   padding-top: 5rem;
 }
 
-#home section .homeIntro {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-  padding: 1rem;
-  border-radius: 1rem;
-  font-size: 1.3rem;
-  width: 80%;
-  margin: auto;
-}
-
 .home2 {
   width: 100%;
   display: -webkit-box;
@@ -11873,9 +11886,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .home2 h2, .home2 .h2 {
@@ -11891,9 +11909,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -11914,16 +11939,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-  padding: 1rem;
-  border-radius: 1rem;
-  font-size: 1.3rem;
-  width: 80%;
-  margin: auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .home2 .botonIndex {
@@ -11962,18 +11985,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 1.6;
-  text-align: left;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 40rem;
   height: 20rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-  font-size: 1.3rem;
-  padding: 1rem;
-  border-radius: 1rem;
   margin: 2rem;
 }
 
@@ -11985,9 +12010,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .cajaRow--reverse {
@@ -12001,6 +12035,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .cajaRow__img {
@@ -12032,9 +12071,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 #desayunos .desayunos h2, #desayunos .desayunos .h2 {
@@ -12047,13 +12091,6 @@ body {
 }
 
 #desayunos .desayunos p {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-  border-radius: 1rem;
-  padding: 1rem;
-  font-size: 1.3rem;
-  line-height: 1.6;
-  text-align: left;
   margin: 2rem;
   width: auto;
 }
@@ -12062,9 +12099,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -12073,9 +12117,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -12122,6 +12173,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .galeria .galeria__titulo {
@@ -12142,9 +12201,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -12203,15 +12269,8 @@ body {
 }
 
 .conocenos .conocenos__contenido .textConocenos {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-  border-radius: 1rem;
-  padding: 1rem;
   margin: 1rem;
   width: 40rem;
-  line-height: 1.6;
-  text-align: left;
-  font-size: 1.3rem;
 }
 
 .conocenos .conocenos__contenido .imgConocenos img {
@@ -12232,9 +12291,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin: auto;
 }
 
@@ -12255,8 +12319,6 @@ body {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -12275,6 +12337,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin: 1.3rem 2rem 2rem 2rem;
 }
 
@@ -12286,6 +12356,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .contacto__principal form .datosPersonales .nombreApellido {
@@ -12315,9 +12393,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .contacto__principal form #boton .boton {
@@ -12350,9 +12437,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin: auto;
 }
 
@@ -12363,13 +12455,7 @@ body {
 }
 
 .contacto2 p {
-  line-height: 1.6;
   text-align: center;
-  font-size: 1.3rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-  border-radius: 1rem;
-  padding: 1rem;
 }
 
 /*--------------------------------ERROR 404-------------------------*/
@@ -12381,9 +12467,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin-top: 12rem;
 }
 

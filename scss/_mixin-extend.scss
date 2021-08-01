@@ -1,0 +1,26 @@
+/*----------EXTEND--------------*/
+.bgTextos {
+  background: $bgTexto;
+  padding: $paddingTexto;
+  border-radius: $borderTexto;
+  font-size: $fuenteTexto;
+  line-height: 1.6;
+  text-align: left;
+  width: 80%;
+  margin: auto;
+}
+
+/*------------MIXIN----------------*/
+@mixin flex(
+  $display,
+  $flex-direction,
+  $justify-content,
+  $align-items,
+  $flex-wrap
+) {
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $flex-wrap;
+}

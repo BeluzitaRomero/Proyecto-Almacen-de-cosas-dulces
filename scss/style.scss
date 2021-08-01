@@ -1,17 +1,8 @@
 @import "variablesPropias";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "mixin-extend";
 @import "media";
 @import "global";
-
-/*----------MIXIN--------------*/
-// .bgTextos {
-//   background: $bgTexto;
-//   padding: $paddingTexto;
-//   border-radius: $borderTexto;
-//   font-size: $fuenteTexto;
-//   width: 80%;
-//   margin: auto;
-// }
 
 /*---------GENERAL-----------*/
 body {
@@ -24,11 +15,9 @@ body {
     margin-bottom: 2rem;
     .home {
       padding: 2%;
-      display: flex;
+      @include flex(flex, column, none, center, none);
       margin-bottom: 2rem;
 
-      align-items: center;
-      flex-direction: column;
       background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url(../img/uni_original.jpg);
       background-size: cover;
@@ -46,9 +35,7 @@ body {
       }
 
       .home__principal__texto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(flex, column, none, center, nowrap);
         .p1 {
           color: white;
           line-height: 1.6;
@@ -61,24 +48,16 @@ body {
       }
     }
     .homeIntro {
-      //@extend .bgTextos;
-      background: $bgTexto;
-      padding: $paddingTexto;
-      border-radius: $borderTexto;
-      font-size: $fuenteTexto;
-      width: 80%;
-      margin: auto;
+      @extend .bgTextos;
     }
   }
 }
 .home2 {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(flex, column, none, center, nowrap);
 
   h2 {
-    color: $Titulos;
+    color: $colorTitulos;
     font-weight: bold;
     text-align: center;
     margin: auto;
@@ -87,9 +66,7 @@ body {
   }
 
   div {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include flex(flex, row, center, none, wrap);
 
     .desayunos {
       width: 15rem;
@@ -101,17 +78,9 @@ body {
 
   .divText2 {
     margin-top: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(flex, column, none, center, nowrap);
 
-    //@extend .bgTextos;
-    background: $bgTexto;
-    padding: $paddingTexto;
-    border-radius: $borderTexto;
-    font-size: $fuenteTexto;
-    width: 80%;
-    margin: auto;
+    @extend .bgTextos;
   }
 
   .botonIndex {
@@ -129,7 +98,7 @@ body {
   padding-bottom: 0;
 
   .productos__titulo2 {
-    color: $Titulos;
+    color: $colorTitulos;
     font-weight: 800;
     font-size: 2rem;
     text-align: center;
@@ -145,17 +114,11 @@ body {
 }
 
 .cajaRow__producto {
-  display: flex;
-  align-items: center;
-  line-height: 1.6;
-  text-align: left;
+  @include flex(flex, row, none, center, nowrap);
 
+  @extend .bgTextos;
   width: 40rem;
   height: 20rem;
-  background: $bgTexto;
-  font-size: $fuenteTexto;
-  padding: $paddingTexto;
-  border-radius: $borderTexto;
   margin: 2rem;
 
   .cajaRow__producto__texto {
@@ -164,14 +127,11 @@ body {
 }
 
 .cajaRow {
-  display: flex;
-  justify-content: center;
+  @include flex(flex, row, center, none, nowrap);
 }
 
 .cajaRow--reverse {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+  @include flex(flex, row-reverse, center, none, nowrap);
 }
 
 .cajaRow__img {
@@ -193,38 +153,27 @@ body {
     }
   }
   .desayunos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(flex, column, none, center, nowrap);
 
     h2 {
       margin-top: 2rem;
       padding: 0 2rem;
-      color: $Titulos;
+      color: $colorTitulos;
       text-align: center;
       font-weight: bold;
       width: 100%;
     }
 
     p {
-      background: $bgTexto;
-      border-radius: $borderTexto;
-      padding: $paddingTexto;
-      font-size: $fuenteTexto;
-      line-height: 1.6;
-      text-align: left;
+      @extend .bgTextos;
       margin: 2rem;
       width: auto;
     }
     .contenedorImgDesayuno {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      @include flex(flex, row, center, none, wrap);
 
       div {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        @include flex(flex, row, center, none, wrap);
       }
 
       .imgDesayuno {
@@ -258,11 +207,10 @@ body {
 .galeria {
   padding: 2%;
   padding-bottom: 0;
-  display: flex;
-  flex-direction: column;
+  @include flex(flex, column, none, none, nowrap);
 
   .galeria__titulo {
-    color: $Titulos;
+    color: $colorTitulos;
     font-size: 2rem;
     font-weight: 800;
     text-align: center;
@@ -275,9 +223,7 @@ body {
     max-width: 1200px;
     margin: auto;
 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include flex(flex, row, center, none, wrap);
 
     img {
       width: $ancho;
@@ -305,7 +251,7 @@ body {
   padding-bottom: 0;
 
   .conocenos__titulo {
-    color: $Titulos;
+    color: $colorTitulos;
     font-size: 2rem;
     font-weight: 800;
     text-align: center;
@@ -314,22 +260,12 @@ body {
   }
 
   .conocenos__contenido {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    @include flex(flex, row, space-around, center, wrap);
 
     .textConocenos {
-      background: $bgTexto;
-      border-radius: $borderTexto;
-      padding: $paddingTexto;
+      @extend .bgTextos;
       margin: 1rem;
       width: 40rem;
-
-      line-height: 1.6;
-      text-align: left;
-      font-size: $fuenteTexto;
     }
 
     .imgConocenos img {
@@ -345,13 +281,11 @@ body {
 .contacto {
   padding: 2%;
   padding-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(flex, column, none, center, nowrap);
   margin: auto;
 
   .contacto__titulo {
-    color: $Titulos;
+    color: $colorTitulos;
     font-size: 2rem;
     font-weight: 800;
     text-align: center;
@@ -361,21 +295,14 @@ body {
 }
 
 .contacto__principal {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  @include flex(flex, row-reverse, center, flex-start, wrap);
 
   form {
-    display: flex;
-    flex-direction: column;
+    @include flex(flex, column, none, none, nowrap);
     margin: 1.3rem 2rem 2rem 2rem;
 
     .datosPersonales {
-      display: flex;
-      flex-direction: column;
+      @include flex(flex, column, none, none, nowrap);
 
       .nombreApellido {
         display: flex;
@@ -394,8 +321,7 @@ body {
     }
 
     #boton {
-      display: flex;
-      justify-content: flex-end;
+      @include flex(flex, row, flex-end, none, nowrap);
 
       .boton {
         border-style: double;
@@ -423,31 +349,23 @@ body {
 
 .contacto2 {
   margin: 3% 2% 3% 2%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(flex, column, none, center, nowrap);
   margin: auto;
 
   .aviso {
-    color: $Titulos;
+    color: $colorTitulos;
     font-weight: bold;
     margin: 2rem 0;
   }
   p {
-    line-height: 1.6;
+    @extend .bgTextos;
     text-align: center;
-    font-size: $fuenteTexto;
-    background: $bgTexto;
-    border-radius: $borderTexto;
-    padding: $paddingTexto;
   }
 }
 
 /*--------------------------------ERROR 404-------------------------*/
 .error {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(flex, column, none, center, nowrap);
   margin-top: 12rem;
 
   h1 {
