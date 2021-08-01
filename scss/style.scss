@@ -1,24 +1,17 @@
+@import "variablesPropias";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "media";
 @import "global";
 
-/*-----VARIABLES--------------*/
-$color-titulos: rgb(56, 145, 153);
-$ancho: 280px;
-$alto: 300px;
-$fuenteTexto: 1.3rem;
-$bgTexto: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-$paddingTexto: 1rem;
-$borderTexto: 1rem;
-
 /*----------MIXIN--------------*/
-.bgTextos {
-  background: $bgTexto;
-  padding: $paddingTexto;
-  border-radius: $borderTexto;
-  font-size: $fuenteTexto;
-  width: 80%;
-  margin: auto;
-}
+// .bgTextos {
+//   background: $bgTexto;
+//   padding: $paddingTexto;
+//   border-radius: $borderTexto;
+//   font-size: $fuenteTexto;
+//   width: 80%;
+//   margin: auto;
+// }
 
 /*---------GENERAL-----------*/
 body {
@@ -68,7 +61,13 @@ body {
       }
     }
     .homeIntro {
-      @extend .bgTextos;
+      //@extend .bgTextos;
+      background: $bgTexto;
+      padding: $paddingTexto;
+      border-radius: $borderTexto;
+      font-size: $fuenteTexto;
+      width: 80%;
+      margin: auto;
     }
   }
 }
@@ -79,7 +78,7 @@ body {
   align-items: center;
 
   h2 {
-    color: $color-titulos;
+    color: $Titulos;
     font-weight: bold;
     text-align: center;
     margin: auto;
@@ -106,7 +105,13 @@ body {
     flex-direction: column;
     align-items: center;
 
-    @extend .bgTextos;
+    //@extend .bgTextos;
+    background: $bgTexto;
+    padding: $paddingTexto;
+    border-radius: $borderTexto;
+    font-size: $fuenteTexto;
+    width: 80%;
+    margin: auto;
   }
 
   .botonIndex {
@@ -124,7 +129,7 @@ body {
   padding-bottom: 0;
 
   .productos__titulo2 {
-    color: $color-titulos;
+    color: $Titulos;
     font-weight: 800;
     font-size: 2rem;
     text-align: center;
@@ -195,7 +200,7 @@ body {
     h2 {
       margin-top: 2rem;
       padding: 0 2rem;
-      color: $color-titulos;
+      color: $Titulos;
       text-align: center;
       font-weight: bold;
       width: 100%;
@@ -257,7 +262,7 @@ body {
   flex-direction: column;
 
   .galeria__titulo {
-    color: $color-titulos;
+    color: $Titulos;
     font-size: 2rem;
     font-weight: 800;
     text-align: center;
@@ -300,7 +305,7 @@ body {
   padding-bottom: 0;
 
   .conocenos__titulo {
-    color: $color-titulos;
+    color: $Titulos;
     font-size: 2rem;
     font-weight: 800;
     text-align: center;
@@ -346,7 +351,7 @@ body {
   margin: auto;
 
   .contacto__titulo {
-    color: $color-titulos;
+    color: $Titulos;
     font-size: 2rem;
     font-weight: 800;
     text-align: center;
@@ -424,7 +429,7 @@ body {
   margin: auto;
 
   .aviso {
-    color: $color-titulos;
+    color: $Titulos;
     font-weight: bold;
     margin: 2rem 0;
   }
