@@ -247,7 +247,7 @@ body {
 
 /*-------------------CONOCENOS--------------------------*/
 .conocenos {
-  padding: 2%;
+  padding: 2% 0;
   padding-bottom: 0;
 
   .conocenos__titulo {
@@ -260,19 +260,27 @@ body {
   }
 
   .conocenos__contenido {
-    @include flex(flex, row, space-around, center, wrap);
+    @include flex(flex, column, none, center, wrap);
 
     .textConocenos {
       @extend .bgTextos;
       margin: 1rem;
-      width: 40rem;
+      width: 80%;
     }
 
-    .imgConocenos img {
+    .imgConocenos {
+      background-image: url(../img/uni2.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+
       width: 100%;
-      max-width: 30rem;
-      padding: 1rem;
-      border-radius: 2rem;
+      height: 60vh;
+      margin: auto;
+      //max-width: 30rem;
+      //padding: 1rem;
+      //border-radius: 2rem;
     }
   }
 }

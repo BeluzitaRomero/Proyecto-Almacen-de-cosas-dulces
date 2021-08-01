@@ -1,5 +1,5 @@
 /*-----VARIABLES PROPIAS--------------*/
-/*------------VARIABLES MODIFICADA BOOTSTRAP-----------*/
+/*------------VARIABLES MODIFICADAS BOOTSTRAP-----------*/
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -12238,7 +12238,7 @@ body {
 
 /*-------------------CONOCENOS--------------------------*/
 .conocenos {
-  padding: 2%;
+  padding: 2% 0;
   padding-bottom: 0;
 }
 
@@ -12255,12 +12255,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -12270,14 +12271,18 @@ body {
 
 .conocenos .conocenos__contenido .textConocenos {
   margin: 1rem;
-  width: 40rem;
+  width: 80%;
 }
 
-.conocenos .conocenos__contenido .imgConocenos img {
+.conocenos .conocenos__contenido .imgConocenos {
+  background-image: url(../img/uni2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   width: 100%;
-  max-width: 30rem;
-  padding: 1rem;
-  border-radius: 2rem;
+  height: 60vh;
+  margin: auto;
 }
 
 /*-------------------CONTACTO---------------------------*/
