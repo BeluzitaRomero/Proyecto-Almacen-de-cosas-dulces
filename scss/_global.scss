@@ -20,7 +20,7 @@ header {
   flex-direction: column;
   z-index: 1;
 
-  #header__logo {
+  #header-logo {
     width: 30%;
     min-width: 20rem;
     margin: 1% 1% 1% 1%;
@@ -51,7 +51,7 @@ footer {
   align-items: center;
   justify-content: space-around;
 
-  .footer__derechos {
+  .footer-derechos {
     display: flex;
     position: relative;
     justify-content: flex-start;
@@ -62,10 +62,10 @@ footer {
     }
   }
 
-  #footer__links {
+  #footer-items {
     flex: 1;
 
-    .linksFooter {
+    .footer-links {
       display: flex;
       list-style: none;
       justify-content: flex-end;

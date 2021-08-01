@@ -80,14 +80,14 @@
     align-items: center;
     justify-content: center;
 
-    .footer__derechos {
+    .footer-derechos {
       p {
         text-align: center;
       }
     }
 
-    #footer__links {
-      .linksFooter {
+    #footer-items {
+      .footer-links {
         display: flex;
         align-items: center;
         padding-left: 0;
@@ -109,11 +109,11 @@
   }
 
   /*----------------------HOME--------------------*/
-  .home__principal {
-    .home__titulo1 {
+  .home-principal {
+    .home-titulo {
       margin-top: 6rem;
     }
-    .home__principal__texto {
+    .home-principal-texto {
       margin: 4rem;
     }
   }
