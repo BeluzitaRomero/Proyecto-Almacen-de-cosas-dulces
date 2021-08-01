@@ -5,24 +5,24 @@
     flex-direction: column;
     align-items: center;
 
-    .cajaRow {
+    .caja-row {
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
 
-      .cajaRow__producto {
+      .caja-row-producto {
         width: fit-content;
       }
     }
-    .cajaRow--reverse {
+    .caja-row-reverse {
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
 
-      .cajaRow__producto {
+      .caja-row-producto {
         width: fit-content;
 
-        .cajaRow__producto__texto {
+        .caja-row-texto {
           width: fit-content;
         }
       }
@@ -30,25 +30,25 @@
   }
   /*-------------------------------------------GALERIA-----------*/
   .galeria {
-    .galeria__fotos {
+    .galeria-fotos {
       img {
         opacity: 1 !important;
       }
     }
   }
   /*-------------------------------------------CONTACTO---------*/
-  .contacto__principal {
+  .contacto-principal {
     form {
       display: flex;
       flex-direction: column;
       padding: 2%;
       max-width: 100%;
 
-      .datosPersonales {
+      .datos-personales {
         display: flex;
         flex-direction: column;
 
-        .nombreApellido {
+        .nombre-apellido {
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -61,11 +61,8 @@
         }
       }
     }
-    .logoRectangular {
-      max-width: 90%;
-    }
   }
-  .textArea {
+  .textarea {
     max-width: 100%;
   }
   #boton {

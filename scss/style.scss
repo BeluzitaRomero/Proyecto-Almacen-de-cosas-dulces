@@ -20,7 +20,7 @@
       background-repeat: no-repeat;
       height: 100vh;
 
-      .home__titulo1 {
+      .home-titulo1 {
         color: rgb(255, 255, 255);
         font-size: 3rem;
         font-weight: bold;
@@ -29,7 +29,7 @@
         padding-bottom: 5%;
       }
 
-      .home__principal__texto {
+      .home-principal-texto {
         @include flex(flex, column, none, center, nowrap);
         .p1 {
           color: white;
@@ -42,7 +42,7 @@
         }
       }
     }
-    .homeIntro {
+    .home-intro {
       @extend .bgTextos;
     }
   }
@@ -71,14 +71,14 @@
     }
   }
 
-  .divText2 {
+  .home-text2 {
     margin-top: 2%;
     @include flex(flex, column, none, center, nowrap);
 
     @extend .bgTextos;
   }
 
-  .botonIndex {
+  .boton-home {
     text-decoration: none;
     color: black;
     background-color: rgb(247, 168, 190);
@@ -92,7 +92,7 @@
   padding: 2%;
   padding-bottom: 0;
 
-  .productos__titulo2 {
+  .productos-titulo {
     color: $colorTitulos;
     font-weight: 800;
     font-size: 2rem;
@@ -101,14 +101,14 @@
     padding-bottom: 1%;
   }
 
-  .productos__subtituloProductos {
+  .subtitulo-productos {
     padding: 1% 0% 2% 0%;
     text-align: center;
     font-size: 1.3rem;
   }
 }
 
-.cajaRow__producto {
+.caja-row-producto {
   @include flex(flex, row, none, center, nowrap);
 
   @extend .bgTextos;
@@ -116,20 +116,20 @@
   height: 20rem;
   margin: 2rem;
 
-  .cajaRow__producto__texto {
+  .caja-row-texto {
     width: auto;
   }
 }
 
-.cajaRow {
+.caja-row {
   @include flex(flex, row, center, none, nowrap);
 }
 
-.cajaRow--reverse {
+.caja-row-reverse {
   @include flex(flex, row-reverse, center, none, nowrap);
 }
 
-.cajaRow__img {
+.caja-row-img {
   width: 20rem;
   height: 22rem;
   padding: 1rem;
@@ -138,7 +138,7 @@
 }
 
 #desayunos {
-  .divisor {
+  .divisor-desayunos {
     width: fit-content;
     padding: 0 2rem;
     margin: auto;
@@ -164,14 +164,14 @@
       margin: 2rem;
       width: auto;
     }
-    .contenedorImgDesayuno {
+    .imagenes-desayuno {
       @include flex(flex, row, center, none, wrap);
 
       div {
         @include flex(flex, row, center, none, wrap);
       }
 
-      .imgDesayuno {
+      .img-desayuno {
         width: 15rem;
         height: 15rem;
         margin: 2rem;
@@ -204,7 +204,7 @@
   padding-bottom: 0;
   @include flex(flex, column, none, none, nowrap);
 
-  .galeria__titulo {
+  .galeria-titulo {
     color: $colorTitulos;
     font-size: 2rem;
     font-weight: 800;
@@ -213,7 +213,7 @@
     padding-bottom: 1%;
   }
 
-  .galeria__fotos {
+  .galeria-fotos {
     width: fit-content;
     max-width: 1200px;
     margin: auto;
@@ -244,7 +244,7 @@
 .conocenos {
   padding-top: 2%;
 
-  .conocenos__titulo {
+  .conocenos-titulo {
     color: $colorTitulos;
     font-size: 2rem;
     font-weight: 800;
@@ -255,15 +255,15 @@
     margin: 0 2rem;
   }
 
-  .conocenos__contenido {
+  .conocenos-contenido {
     @include flex(flex, column, none, center, wrap);
 
-    .textConocenos {
+    .conocenos-texto {
       @extend .bgTextos;
       margin: 1rem;
     }
 
-    .imgConocenos {
+    .conocenos-img {
       background-image: url(../img/uni2.jpg);
       background-size: cover;
       background-repeat: no-repeat;
@@ -284,7 +284,7 @@
   @include flex(flex, column, none, center, nowrap);
   margin: auto;
 
-  .contacto__titulo {
+  .contacto-ttitulo {
     color: $colorTitulos;
     font-size: 2rem;
     font-weight: 800;
@@ -294,17 +294,17 @@
   }
 }
 
-.contacto__principal {
+.contacto-principal {
   @include flex(flex, row-reverse, center, flex-start, wrap);
 
   form {
     @include flex(flex, column, none, none, nowrap);
     margin: 1.3rem 2rem 2rem 2rem;
 
-    .datosPersonales {
+    .datos-personales {
       @include flex(flex, column, none, none, nowrap);
 
-      .nombreApellido {
+      .nombre-apellido {
         display: flex;
         justify-content: space-between;
       }
@@ -315,7 +315,7 @@
       }
     }
 
-    div .textArea {
+    div .textarea {
       border-radius: 0.5rem;
       border-color: rgba(114, 113, 113, 0.699);
     }
@@ -333,14 +333,14 @@
     }
   }
 
-  .fotoContacto {
+  .contacto-img {
     margin: 1.3rem;
     width: 35.4rem;
     border-radius: 1rem;
   }
 }
 
-.inputDatos {
+.input-datos {
   padding: 0.2rem;
   border-radius: 0.5rem;
   margin-bottom: 0.5rem;
@@ -348,7 +348,7 @@
 }
 
 .contacto2 {
-  margin: 3% 2% 3% 2%;
+  margin: 3% 2%;
   @include flex(flex, column, none, center, nowrap);
   margin: auto;
 
