@@ -12270,6 +12270,7 @@ footer #footer-items .footer-links li {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position-x: center;
   border-radius: 1rem;
   width: 80%;
   height: 60vh;
