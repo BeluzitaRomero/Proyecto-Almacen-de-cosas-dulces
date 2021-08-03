@@ -30,13 +30,18 @@ header {
     width: 100%;
     background: linear-gradient(rgb(245, 187, 203), rgb(247, 228, 228));
 
-    .nav-item:hover {
-      background-color: rgba(245, 187, 203, 0.61);
+    .nav-item {
+      width: 8rem;
+
+      &:hover {
+        background-color: rgba(245, 187, 203, 0.61);
+      }
 
       .nav-link {
-        color: black;
+        text-align: center;
+
         &:hover {
-          color: black;
+          color: black !important;
         }
       }
     }

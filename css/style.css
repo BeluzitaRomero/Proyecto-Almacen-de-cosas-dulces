@@ -11729,16 +11729,20 @@ header nav {
   background: linear-gradient(#f5bbcb, #f7e4e4);
 }
 
+header nav .nav-item {
+  width: 8rem;
+}
+
 header nav .nav-item:hover {
   background-color: rgba(245, 187, 203, 0.61);
 }
 
-header nav .nav-item:hover .nav-link {
-  color: black;
+header nav .nav-item .nav-link {
+  text-align: center;
 }
 
-header nav .nav-item:hover .nav-link:hover {
-  color: black;
+header nav .nav-item .nav-link:hover {
+  color: black !important;
 }
 
 /*------------------------------FOOTER-------*/
