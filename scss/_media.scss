@@ -1,7 +1,10 @@
 @media only screen and (max-width: 768px) {
   /*-------------------------NAV-------------------------------*/
-  .nav-link {
-    text-align: left !important;
+  .nav-item {
+    width: fit-content !important;
+    .nav-link {
+      text-align: left !important;
+    }
   }
   /*---------------------------------------PRODUCTO------------*/
   .productos {

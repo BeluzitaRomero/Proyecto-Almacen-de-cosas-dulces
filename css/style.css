@@ -11516,7 +11516,12 @@ fieldset:disabled .btn {
 /*------------MIXIN----------------*/
 @media only screen and (max-width: 768px) {
   /*-------------------------NAV-------------------------------*/
-  .nav-link {
+  .nav-item {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+  .nav-item .nav-link {
     text-align: left !important;
   }
   /*---------------------------------------PRODUCTO------------*/
