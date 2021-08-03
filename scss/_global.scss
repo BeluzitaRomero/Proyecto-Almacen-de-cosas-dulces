@@ -15,9 +15,7 @@ header {
   left: 0;
   right: 0;
   background-image: url(../img/Header-impar.png);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  @include flex(flex, column, none, center, nowrap);
   z-index: 1;
 
   #header-logo {
@@ -58,7 +56,6 @@ footer {
 
   .footer-derechos {
     display: flex;
-    position: relative;
     justify-content: flex-start;
     flex: 1;
 
