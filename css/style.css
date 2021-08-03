@@ -11879,6 +11879,10 @@ footer #footer-items .footer-links li {
   margin-top: 6%;
 }
 
+.img-logo img {
+  width: 8rem;
+}
+
 /*-------------------HOME---------------------------------*/
 #home section {
   margin-bottom: 2rem;
@@ -11948,6 +11952,8 @@ footer #footer-items .footer-links li {
 }
 
 .home2 {
+  padding: 2%;
+  padding-bottom: 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12120,11 +12126,16 @@ footer #footer-items .footer-links li {
   border-radius: 2rem;
 }
 
+#desayunos {
+  padding: 2%;
+  padding-bottom: 0;
+}
+
 #desayunos .divisor-desayunos {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0 2rem;
+  padding: 0 2%;
   margin: auto;
   margin-bottom: 2rem;
 }
@@ -12308,7 +12319,8 @@ footer #footer-items .footer-links li {
 
 /*-------------------CONOCENOS--------------------------*/
 .conocenos {
-  padding-top: 2%;
+  padding: 2%;
+  padding-bottom: 0;
 }
 
 .conocenos .conocenos-titulo {

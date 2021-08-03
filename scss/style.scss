@@ -51,6 +51,8 @@
 
 // SEGUNDA SECCION DE HOME
 .home2 {
+  padding: 2%;
+  padding-bottom: 0;
   width: 100%;
   @include flex(flex, column, none, center, nowrap);
 
@@ -144,9 +146,11 @@
 
 // SEGUNDA SECCION DE PRODUCTOS: DESAYUNOS
 #desayunos {
+  padding: 2%;
+  padding-bottom: 0;
   .divisor-desayunos {
     width: fit-content;
-    padding: 0 2rem;
+    padding: 0 2%;
     margin: auto;
     margin-bottom: 2rem;
     img {
@@ -248,7 +252,8 @@
 
 /*-------------------CONOCENOS--------------------------*/
 .conocenos {
-  padding-top: 2%;
+  padding: 2%;
+  padding-bottom: 0;
 
   .conocenos-titulo {
     color: $colorTitulos;
