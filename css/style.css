@@ -11515,6 +11515,10 @@ fieldset:disabled .btn {
 
 /*------------MIXIN----------------*/
 @media only screen and (max-width: 768px) {
+  /*-------------------------NAV-------------------------------*/
+  .nav-link {
+    text-align: left !important;
+  }
   /*---------------------------------------PRODUCTO------------*/
   .productos {
     display: -webkit-box;
@@ -11524,9 +11528,14 @@ fieldset:disabled .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .productos .caja-row {
     display: -webkit-box;
@@ -11536,9 +11545,14 @@ fieldset:disabled .btn {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .productos .caja-row .caja-row-producto {
     width: -webkit-fit-content;
@@ -11553,9 +11567,14 @@ fieldset:disabled .btn {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .productos .caja-row-reverse .caja-row-producto {
     width: -webkit-fit-content;
@@ -11580,6 +11599,14 @@ fieldset:disabled .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    -webkit-box-align: none;
+        -ms-flex-align: none;
+            align-items: none;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     padding: 2%;
     max-width: 100%;
   }
@@ -11591,6 +11618,14 @@ fieldset:disabled .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    -webkit-box-align: none;
+        -ms-flex-align: none;
+            align-items: none;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .contacto-principal form .datos-personales .nombre-apellido {
     display: -webkit-box;
@@ -11603,6 +11638,11 @@ fieldset:disabled .btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: none;
+        -ms-flex-align: none;
+            align-items: none;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .contacto-principal form .datos-personales .telefono {
     display: -webkit-box;
@@ -11615,19 +11655,33 @@ fieldset:disabled .btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: none;
+        -ms-flex-align: none;
+            align-items: none;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
-  .textarea {
+  .contacto-principal form div .textarea {
     max-width: 100%;
   }
-  #boton {
+  .contacto-principal form #boton {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -webkit-box-align: none;
+        -ms-flex-align: none;
+            align-items: none;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
-  #boton .boton {
+  .contacto-principal form #boton .boton {
     margin: 0;
   }
   /*----------------------- FOOTER-----------------------*/
@@ -11639,12 +11693,14 @@ fieldset:disabled .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   footer .footer-derechos p {
     text-align: center;
@@ -11653,9 +11709,18 @@ fieldset:disabled .btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     padding-left: 0;
   }
   footer #footer-items .footer-links li {
@@ -11670,6 +11735,7 @@ fieldset:disabled .btn {
   }
   .nav-link {
     font-size: 1.4rem;
+    text-align: left !important;
   }
   /*----------------------HOME--------------------*/
   .home-principal .home-titulo {
@@ -12484,6 +12550,7 @@ footer #footer-items .footer-links li {
   font-weight: bold;
   text-align: center;
   margin: 2rem 0;
+  width: 40rem;
 }
 
 .error img {

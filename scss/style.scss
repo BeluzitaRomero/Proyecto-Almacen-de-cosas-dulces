@@ -48,6 +48,8 @@
     }
   }
 }
+
+// SEGUNDA SECCION DE HOME
 .home2 {
   width: 100%;
   @include flex(flex, column, none, center, nowrap);
@@ -140,6 +142,7 @@
   border-radius: 2rem;
 }
 
+// SEGUNDA SECCION DE PRODUCTOS: DESAYUNOS
 #desayunos {
   .divisor-desayunos {
     width: fit-content;
@@ -351,6 +354,8 @@
   border-color: rgba(114, 113, 113, 0.699);
 }
 
+// SEGUNDA SECCION DE CONTACTO
+
 .contacto2 {
   margin: 3% 2%;
   @include flex(flex, column, none, center, nowrap);
@@ -377,6 +382,7 @@
     font-weight: bold;
     text-align: center;
     margin: 2rem 0;
+    width: 40rem;
   }
   img {
     width: 40rem;

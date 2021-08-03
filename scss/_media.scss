@@ -1,23 +1,21 @@
 @media only screen and (max-width: 768px) {
+  /*-------------------------NAV-------------------------------*/
+  .nav-link {
+    text-align: left !important;
+  }
   /*---------------------------------------PRODUCTO------------*/
   .productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(flex, column, none, center, nowrap);
 
     .caja-row {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
+      @include flex(flex, column-reverse, none, center, nowrap);
 
       .caja-row-producto {
         width: fit-content;
       }
     }
     .caja-row-reverse {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
+      @include flex(flex, column-reverse, none, center, nowrap);
 
       .caja-row-producto {
         width: fit-content;
@@ -39,46 +37,39 @@
   /*-------------------------------------------CONTACTO---------*/
   .contacto-principal {
     form {
-      display: flex;
-      flex-direction: column;
+      @include flex(flex, column, none, none, nowrap);
       padding: 2%;
       max-width: 100%;
 
       .datos-personales {
-        display: flex;
-        flex-direction: column;
+        @include flex(flex, column, none, none, nowrap);
 
         .nombre-apellido {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
+          @include flex(flex, column, center, none, nowrap);
         }
 
         .telefono {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
+          @include flex(flex, column, center, none, nowrap);
+        }
+      }
+
+      div .textarea {
+        max-width: 100%;
+      }
+
+      #boton {
+        @include flex(flex, row, space-evenly, none, nowrap);
+
+        .boton {
+          margin: 0;
         }
       }
     }
   }
-  .textarea {
-    max-width: 100%;
-  }
-  #boton {
-    display: flex;
-    justify-content: space-evenly;
 
-    .boton {
-      margin: 0;
-    }
-  }
   /*----------------------- FOOTER-----------------------*/
   footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex(flex, column, center, center, nowrap);
 
     .footer-derechos {
       p {
@@ -88,8 +79,7 @@
 
     #footer-items {
       .footer-links {
-        display: flex;
-        align-items: center;
+        @include flex(flex, row, none, center, nowrap);
         padding-left: 0;
 
         li {
@@ -106,6 +96,7 @@
   }
   .nav-link {
     font-size: 1.4rem;
+    text-align: left !important;
   }
 
   /*----------------------HOME--------------------*/
