@@ -12570,8 +12570,8 @@ footer #footer-items .footer-links li {
   color: #3b150a;
   font-weight: bold;
   text-align: center;
-  width: 35rem;
-  margin: 2rem;
+  width: 80%;
+  margin: auto;
 }
 
 .error img {
