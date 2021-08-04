@@ -11983,21 +11983,6 @@ footer #footer-items .footer-links li {
 
 .home2 .home2-intro .home-text2 {
   margin-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
 }
 
 .home2 div {
@@ -12018,9 +12003,9 @@ footer #footer-items .footer-links li {
       flex-wrap: wrap;
 }
 
-.home2 div .desayunos {
-  width: 15rem;
-  height: 15rem;
+.home2 div div .desayunos-img {
+  width: 14rem;
+  height: 14rem;
   margin: 2rem;
   border-radius: 2rem;
 }
@@ -12213,8 +12198,8 @@ footer #footer-items .footer-links li {
 }
 
 #desayunos .desayunos .imagenes-desayuno .img-desayuno {
-  width: 15rem;
-  height: 15rem;
+  width: 14rem;
+  height: 14rem;
   margin: 2rem;
   border-radius: 1rem;
 }
@@ -12225,6 +12210,7 @@ footer #footer-items .footer-links li {
   background-position: center;
   background-size: cover;
   min-height: 70vh;
+  border-radius: 1rem;
 }
 
 #desayunos #carouselExampleCaptions .carousel-inner .carousel2 {
@@ -12233,6 +12219,7 @@ footer #footer-items .footer-links li {
   background-position: center;
   background-size: cover;
   min-height: 70vh;
+  border-radius: 1rem;
 }
 
 #desayunos #carouselExampleCaptions .carousel-inner .carousel3 {
@@ -12241,6 +12228,7 @@ footer #footer-items .footer-links li {
   background-position: center;
   background-size: cover;
   min-height: 70vh;
+  border-radius: 1rem;
 }
 
 /*---------------------GALERIA----------------------------*/

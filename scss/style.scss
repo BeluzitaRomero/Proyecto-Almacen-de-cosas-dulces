@@ -68,8 +68,6 @@
 
     .home-text2 {
       margin-top: 2%;
-      @include flex(flex, column, none, center, nowrap);
-
       @extend .bgTextos;
     }
   }
@@ -77,11 +75,13 @@
   div {
     @include flex(flex, row, center, none, wrap);
 
-    .desayunos {
-      width: 15rem;
-      height: 15rem;
-      margin: 2rem;
-      border-radius: 2rem;
+    div {
+      .desayunos-img {
+        width: 14rem;
+        height: 14rem;
+        margin: 2rem;
+        border-radius: 2rem;
+      }
     }
   }
 
@@ -182,8 +182,8 @@
       }
 
       .img-desayuno {
-        width: 15rem;
-        height: 15rem;
+        width: 14rem;
+        height: 14rem;
         margin: 2rem;
         border-radius: 1rem;
       }
@@ -202,6 +202,7 @@
           background-position: center;
           background-size: cover;
           min-height: 70vh;
+          border-radius: 1rem;
         }
       }
     }
